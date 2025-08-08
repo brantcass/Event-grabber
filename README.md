@@ -1,89 +1,79 @@
-📅 Event Grabber
-Adapted from QuixSens/gmail-event-extractor
+<h1>📅 Event Grabber</h1>
+<p><em>Adapted from <a href="https://github.com/QuixSens/gmail-event-extractor">QuixSens/gmail-event-extractor</a></em></p>
 
-Event Grabber allows you to fetch and extract key events and dates from your Gmail and automatically add them to your Google Calendar.
-This version has been customized for my personal workflow, with a few tweaks for smoother usage.
+<p>Event Grabber allows you to fetch and extract key events and dates from your Gmail and automatically add them to your Google Calendar.<br>
+This version has been customized for my personal workflow, with a few tweaks for smoother usage.</p>
 
-🔧 Requirements
-Python 3.8 or higher
+<hr>
 
-Gmail account with IMAP enabled
+<h2>🔧 Requirements</h2>
+<ul>
+  <li>Python 3.8 or higher</li>
+  <li>Gmail account with IMAP enabled</li>
+  <li>Google Calendar API credentials (JSON file from Google Cloud Console)</li>
+  <li>Required Python packages:
+    <ul>
+      <li>google-auth</li>
+      <li>google-api-python-client</li>
+      <li>google-auth-httplib2</li>
+      <li>google-auth-oauthlib</li>
+      <li>imaplib (standard library)</li>
+      <li>email (standard library)</li>
+      <li>(and any other dependencies as needed)</li>
+    </ul>
+  </li>
+</ul>
 
-Google Calendar API credentials (JSON file from Google Cloud Console)
+<hr>
 
-Required Python packages:
+<h2>⚙️ Installation</h2>
 
-google-auth
-
-google-api-python-client
-
-google-auth-httplib2
-
-google-auth-oauthlib
-
-imaplib (standard library)
-
-email (standard library)
-
-(and any other dependencies as needed)
-
-⚙️ Installation
-Clone this repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/your-username/Event-grabber.git
+<p><strong>Clone this repository:</strong></p>
+<pre><code>git clone https://github.com/brantcass/Event-grabber.git
 cd Event-grabber
-Create and activate a virtual environment (optional but recommended):
+</code></pre>
 
-bash
-Copy
-Edit
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# macOS/Linux
-source venv/bin/activate
-Install required Python packages:
+<p><strong>Install required Python packages:</strong></p>
+<pre><code>pip install -r requirements.txt
+</code></pre>
+<p>(If you don’t have a <code>requirements.txt</code> yet, create one with the needed packages)</p>
 
-bash
-Copy
-Edit
-pip install -r requirements.txt
-(If you don’t have a requirements.txt yet, you can create one with the needed packages)
+<p><strong>Set up your Google Calendar API credentials:</strong></p>
+<ul>
+  <li>Follow the <a href="https://developers.google.com/calendar/api/quickstart/python">Google Calendar API Python Quickstart</a> to create <code>credentials.json</code></li>
+  <li>Save <code>credentials.json</code> in the project root folder</li>
+</ul>
 
-Set up your Google Calendar API credentials:
+<p><strong>Enable IMAP in your Gmail account:</strong></p>
+<ul>
+  <li>Go to Gmail Settings → Forwarding and POP/IMAP → Enable IMAP</li>
+</ul>
 
-Follow the Google Calendar API Python Quickstart to create credentials.json
+<hr>
 
-Save credentials.json in the project root folder
+<h2>🚀 Usage</h2>
+<p><strong>Configure your script if needed:</strong></p>
+<ul>
+  <li>Adjust any config variables (email address, labels, date ranges, etc.) inside the Python script.</li>
+</ul>
 
-Enable IMAP in your Gmail account:
+<p><strong>Run the script:</strong></p>
+<pre><code>python main.py
+</code></pre>
 
-Go to Gmail Settings → Forwarding and POP/IMAP → Enable IMAP
+<p><strong>Authorize access to your Google Calendar:</strong></p>
+<ul>
+  <li>On first run, a browser window will open to authorize the app to access your calendar.</li>
+</ul>
 
-🚀 Usage
-Configure your script if needed:
+<p>Enjoy your events automatically added to your Google Calendar!</p>
 
-Adjust any config variables (email address, labels, date ranges, etc.) inside the Python script.
+<hr>
 
-Run the script:
-
-bash
-Copy
-Edit
-python main.py
-Authorize access to your Google Calendar:
-
-On first run, a browser window will open to authorize the app to access your calendar.
-
-Enjoy your events automatically added to your Google Calendar!
-
-📚 Notes
-Make sure your Gmail account has emails with calendar event details for the script to extract.
-
-The script parses dates and events based on heuristics — it might need tweaking for specific email formats.
-
-Keep your credentials secure and don’t share them publicly.
+<h2>📚 Notes</h2>
+<ul>
+  <li>Make sure your Gmail account has emails with calendar event details for the script to extract.</li>
+  <li>The script parses dates and events based on heuristics — it might need tweaking for specific email formats.</li>
+  <li>Keep your credentials secure and don’t share them publicly.</li>
+</ul>
 
