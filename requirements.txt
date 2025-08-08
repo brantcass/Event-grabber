@@ -1,0 +1,7 @@
+# Google Calendar + Auth libraries
+google-api-python-client
+google-auth
+google-auth-oauthlib
+
+# Date parsing (used by fallback or future-proofing)
+python-dateutil
