@@ -2,7 +2,7 @@
 <p><em>Adapted from <a href="https://github.com/QuixSens/gmail-event-extractor">QuixSens/gmail-event-extractor</a></em></p>
 
 <p>Event Grabber allows you to fetch and extract key events and dates from your Gmail and automatically add them to your Google Calendar.<br>
-This version has been customized for my personal workflow, with a few tweaks for smoother usage.</p>
+This version has been customized for my personal workflow, with a few tweaks, I am hoping to use this for my own Alexa variation I am building currently as well as a smart mirror.</p>
 
 <hr>
 
