@@ -15,7 +15,7 @@ from google.auth.transport.requests import Request
 from googleapiclient.discovery import build
 
 # --- CONFIG ---
-EMAIL_ACCOUNT = 'Email goes here'
+EMAIL_ACCOUNT = 'brantcass7@gmail.com'
 APP_PASSWORD = 'kpsguklnrcinsint'  # Remove the spaces
 SCOPES = ['https://www.googleapis.com/auth/calendar']
 
