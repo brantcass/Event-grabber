@@ -10,6 +10,7 @@ This version has been customized for my personal workflow, with a few tweaks for
 <ul>
   <li>Python 3.8 or higher</li>
   <li>Gmail account with IMAP enabled</li>
+  <li>Download and install <a href="https://ollama.com" target="_blank" rel="noopener noreferrer">Ollama</a></li>
   <li>Google Calendar API credentials (JSON file from Google Cloud Console)</li>
   <li>Required Python packages:
     <ul>
